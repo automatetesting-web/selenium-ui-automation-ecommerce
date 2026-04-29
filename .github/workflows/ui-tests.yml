@@ -13,7 +13,7 @@ jobs:
     env:
       HEADLESS: true
       BASE_URL: https://automationexercise.com
-      LOGIN_EMAIL: testuser@example.com
+      LOGIN_EMAIL: testuser122@example.com
       LOGIN_PASSWORD: password123
 
     steps:
@@ -29,6 +29,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Run UI tests
         env:
