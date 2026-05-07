@@ -12,9 +12,10 @@ jobs:
 
     env:
       HEADLESS: true
-      BASE_URL: https://automationexercise.com
-      LOGIN_EMAIL: testuser122@example.com
-      LOGIN_PASSWORD: password123
+      BASE_URL: ${{ secrets.BASE_URL }}
+      LOGIN_EMAIL: ${{ secrets.LOGIN_EMAIL }}
+      LOGIN_PASSWORD: ${{ secrets.LOGIN_PASSWORD }}
+
 
     steps:
       - name: Checkout repository
