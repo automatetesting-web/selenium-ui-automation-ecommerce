@@ -40,4 +40,4 @@ jobs:
         env:
           PYTHONPATH: src
         run: |
-          pytest
+          pytest -n auto
