@@ -2,10 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators:
-    """
-    All locators for Login / Signup page.
-    """
-
     # Header
     SIGNUP_LOGIN_BUTTON = (By.LINK_TEXT, "Signup / Login")
 
