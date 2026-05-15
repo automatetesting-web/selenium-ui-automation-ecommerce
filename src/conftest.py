@@ -21,4 +21,3 @@ def pytest_runtest_makereport(item, call):
         driver = item.funcargs.get("driver")
         if driver:
             driver.save_screenshot("failure.png")
-``
